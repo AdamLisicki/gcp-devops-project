@@ -12,7 +12,7 @@ resource "google_compute_subnetwork" "gcp-devops-project-network" {
 
 resource "google_service_account" "default" {
   account_id   = "service-account-id"
-  display_name = "gcp-devops-project"
+  display_name = "Service Account"
 }
 
 resource "google_container_cluster" "primary" {
