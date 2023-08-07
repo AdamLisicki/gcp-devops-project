@@ -11,7 +11,8 @@ tasks:
         curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-441.0.0-linux-x86_64.tar.gz
         tar -xf google-cloud-cli-441.0.0-linux-x86_64.tar.gz
         sudo yes Y | ./google-cloud-sdk/install.sh
-        sudo alias gcloud=/workspace/google-cloud-sdk/bin/gcloud
+        source ./google-cloud-sdk/path.bash.inc
+        source ./google-cloud-sdk/completion.bash.inc
         cd $THEIA_WORKSPACE_ROOT
         
 
