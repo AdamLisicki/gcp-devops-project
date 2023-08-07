@@ -29,11 +29,3 @@ variable "disk_type" {
   type        = string
   description = "Type of the node's disk."
 }
-
-variable "cluster_version" {
-  default = "1.23"
-}
-
-variable "service_account_email" {
-  type = string
-}
