@@ -1,5 +1,0 @@
-#! /usr/bin/bash
-
-gcloud auth login
-gcloud config set project gcp-devops-project-395119
-

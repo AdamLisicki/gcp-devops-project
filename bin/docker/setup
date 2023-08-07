@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+
+source ./bin/build
+source ./bin/run
