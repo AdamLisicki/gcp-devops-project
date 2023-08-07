@@ -7,7 +7,7 @@ variable "region" {
 }
 
 variable "zone" {
-  description = "zone for"
+  description = "zone for GKE cluster"
 }
 
 variable "gke_num_nodes" {
@@ -32,4 +32,8 @@ variable "disk_type" {
 
 variable "cluster_version" {
   default = "1.27"
+}
+
+variable "service_account_email" {
+  type = string
 }
