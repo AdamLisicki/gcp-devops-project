@@ -31,7 +31,7 @@ variable "disk_type" {
 }
 
 variable "cluster_version" {
-  default = "1.27"
+  default = "1.23"
 }
 
 variable "service_account_email" {
