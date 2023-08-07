@@ -10,11 +10,6 @@ resource "google_compute_subnetwork" "gcp-devops-project-network" {
   ip_cidr_range = "10.10.10.0/24"
 }
 
-resource "google_service_account" "default" {
-  account_id   = "service-account-id"
-  display_name = "Service Account"
-}
-
 resource "google_container_cluster" "primary" {
   name     = "gcp-devops-project-gke-cluster"
   location = var.zone
@@ -49,7 +44,7 @@ resource "google_container_node_pool" "primary_nodes" {
       env = var.project_id
     }
 
-    service_account = google_service_account.default.email
+    service_account = var.service_account_email
     image_type      = "COS"
     machine_type    = var.machine_type
     disk_size_gb    = var.disk_size_gb

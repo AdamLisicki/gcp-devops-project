@@ -31,5 +31,5 @@ variable "disk_type" {
 }
 
 variable "cluster_version" {
-  default = "1.27.2"
+  default = "1.27"
 }
