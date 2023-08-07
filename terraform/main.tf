@@ -14,7 +14,6 @@ resource "google_container_cluster" "primary" {
   name     = "gcp-devops-project-gke-cluster"
   location = var.zone
 
-  min_master_version       = var.cluster_version
   remove_default_node_pool = true
   initial_node_count       = 1
 
