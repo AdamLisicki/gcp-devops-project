@@ -1,5 +1,7 @@
 include:
   - template: Terraform.gitlab-ci.yml
+    rules:
+      changes: terraform/**/*
 
 variables:
   TF_STATE_NAME: production
