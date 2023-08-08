@@ -12,6 +12,5 @@ before_script:
 
 .ci_rules:
   rules:
-    - if: $CI_COMMIT_BRANCH == "main"
-      changes:
+    - changes:
         - terraform/**/*
