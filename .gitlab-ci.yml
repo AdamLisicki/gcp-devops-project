@@ -1,7 +1,5 @@
 include:
   - template: Terraform.gitlab-ci.yml
-    rules:
-      changes: terraform/**/*
 
 variables:
   TF_STATE_NAME: production
@@ -11,3 +9,9 @@ variables:
 
 before_script:
   - export GOOGLE_CREDENTIALS=$(echo $BASE64_GOOGLE_CREDENTIALS | base64 -d)
+
+.ci_rules:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      changes:
+        - terraform/**/*
