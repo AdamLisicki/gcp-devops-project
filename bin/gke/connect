@@ -1,0 +1,3 @@
+#! /usr/bin/bash
+
+gcloud container clusters get-credentials gcp-devops-project-gke-cluster --zone europe-central2-a --project gcp-devops-project-395119

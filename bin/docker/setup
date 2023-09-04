@@ -1,4 +1,4 @@
 #! /usr/bin/bash
 
-source ./bin/build
-source ./bin/run
+source ./bin/docker/build
+source ./bin/docker/run
