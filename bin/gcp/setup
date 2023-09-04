@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+
+source ./bin/gcp/login
+source ./bin/gcp/install-kubectl
