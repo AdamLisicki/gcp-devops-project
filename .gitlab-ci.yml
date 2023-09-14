@@ -5,7 +5,6 @@ variables:
   TF_STATE_NAME: production
   TF_CACHE_KEY: production
   TF_ROOT: terraform
-  TF_VAR_gcp_project: gcp-devops-project
 
 before_script:
   - export GOOGLE_CREDENTIALS=$(echo $BASE64_GOOGLE_CREDENTIALS | base64 -d)
